@@ -69,7 +69,7 @@ These kinds of transactions have to be signed by an actual key pair and thus can
 
 
 ## Identifier
-Any Ethereum address and be used as identifier.
+Any Ethereum address can be used as identifier.
 Avery identity should demande registration to XSL labs (Admin) with a KYC process.
 Identity DID document created as well as their first verifiable identifier.
 
