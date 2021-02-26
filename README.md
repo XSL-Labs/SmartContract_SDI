@@ -31,6 +31,7 @@ reserved for Admin
 - public profile service IPFS url
 
 Example:
+```javascript
 {
 	"context": ["https://www.w3.org/ns/did/v1", "https://w3id.org/security/v1"],
 	"id": "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db",
@@ -59,7 +60,7 @@ Example:
 	 }
    ]
 }
-
+```
 
 ## Off-chain transaction
 Since each Ethereum transaction must be funded, there is a growing trend of on-chain transactions that are authenticated via an externally created signature and not by the actual transaction originator. This allows for 3rd party funding services, or for receivers to pay without any fundamental changes to the underlying Ethereum architecture.
