@@ -46,10 +46,10 @@ Example:
    ],
    "assertionMethod": [
 	 {
-	 "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db#VC-Signature",
-	 "type": "EcdsaSecp256k1Signature2019",
-	 "controller": "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db",
-	 "ethereumAddress": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"
+	   "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db#VC-Signature",
+	   "type": "EcdsaSecp256k1Signature2019",
+	   "controller": "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db",
+	   "ethereumAddress": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"
 	 }
    ],
    "service": [
@@ -168,10 +168,10 @@ Example:
    ],
    "assertionMethod": [
 	 {
-	 "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db#VC-Signature",
-	 "type": "EcdsaSecp256k1Signature2019",
-	 "controller": "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db",
-	 "ethereumAddress": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"
+	   "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db#VC-Signature",
+	   "type": "EcdsaSecp256k1Signature2019",
+	   "controller": "did:syl:0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db",
+	   "ethereumAddress": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"
 	 }
    ],
    "service": [
