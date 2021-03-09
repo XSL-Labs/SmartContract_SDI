@@ -1,0 +1,454 @@
+{
+  "contractName": "IERC173",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.4+commit.3f05b770\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-173.md  Note: the ERC-165 identifier for this interface is 0x7f5828d0\",\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"The address of the owner.\"}},\"transferOwnership(address)\":{\"params\":{\"_newOwner\":\"The address of the new owner of the contract\"}}},\"title\":\"ERC-173 Contract Ownership Standard\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"owner()\":{\"notice\":\"Get the address of the owner\"},\"transferOwnership(address)\":{\"notice\":\"Set the address of the new owner of the contract\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/imadlgo/github/SmartContract_SDI/contracts/IERC173.sol\":\"IERC173\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/imadlgo/github/SmartContract_SDI/contracts/IERC173.sol\":{\"keccak256\":\"0x2f70953264ec1d96ee1c5da3d6edfed075febccd7e0c225afb6f44a17f114384\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://8d61f3bcbf3d13b5b7b432d8916d25a49996572e6d3c87240e3edf03c758e227\",\"dweb:/ipfs/QmVzWe69zk99W9BvrrzVFguUp8ow3oQMn1Taf6utHgGaiz\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\n\npragma solidity ^0.7.4;\n\n/// @title ERC-173 Contract Ownership Standard\n/// @dev See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-173.md\n///  Note: the ERC-165 identifier for this interface is 0x7f5828d0\ninterface IERC173 /* is ERC165 */ {\n    /// @dev This emits when ownership of a contract changes.\n    //event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\n\n    /// @notice Get the address of the owner\n    /// @return The address of the owner.\n    function owner() external view returns (address);\n\n    /// @notice Set the address of the new owner of the contract\n    /// @param _newOwner The address of the new owner of the contract\n    function transferOwnership(address _newOwner) external;\n}\n",
+  "sourcePath": "/Users/imadlgo/github/SmartContract_SDI/contracts/IERC173.sol",
+  "ast": {
+    "absolutePath": "/Users/imadlgo/github/SmartContract_SDI/contracts/IERC173.sol",
+    "exportedSymbols": {
+      "IERC173": [
+        15
+      ]
+    },
+    "id": 16,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 2,
+          "nodeType": "StructuredDocumentation",
+          "src": "65:188:0",
+          "text": "@title ERC-173 Contract Ownership Standard\n @dev See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-173.md\n  Note: the ERC-165 identifier for this interface is 0x7f5828d0"
+        },
+        "fullyImplemented": false,
+        "id": 15,
+        "linearizedBaseContracts": [
+          15
+        ],
+        "name": "IERC173",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 3,
+              "nodeType": "StructuredDocumentation",
+              "src": "447:82:0",
+              "text": "@notice Get the address of the owner\n @return The address of the owner."
+            },
+            "functionSelector": "8da5cb5b",
+            "id": 8,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "owner",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "548:2:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8,
+                  "src": "574:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "574:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "573:9:0"
+            },
+            "scope": 15,
+            "src": "534:49:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 9,
+              "nodeType": "StructuredDocumentation",
+              "src": "589:130:0",
+              "text": "@notice Set the address of the new owner of the contract\n @param _newOwner The address of the new owner of the contract"
+            },
+            "functionSelector": "f2fde38b",
+            "id": 14,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnership",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11,
+                  "mutability": "mutable",
+                  "name": "_newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "751:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "751:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "750:19:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "778:0:0"
+            },
+            "scope": 15,
+            "src": "724:55:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 16,
+        "src": "253:528:0"
+      }
+    ],
+    "src": "40:742:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/imadlgo/github/SmartContract_SDI/contracts/IERC173.sol",
+      "exportedSymbols": {
+        "IERC173": [
+          15
+        ]
+      },
+      "license": "UNLICENSED"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".4"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "40:23:0"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            15
+          ],
+          "name": "IERC173",
+          "scope": 16
+        },
+        "children": [
+          {
+            "attributes": {
+              "text": "@title ERC-173 Contract Ownership Standard\n @dev See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-173.md\n  Note: the ERC-165 identifier for this interface is 0x7f5828d0"
+            },
+            "id": 2,
+            "name": "StructuredDocumentation",
+            "src": "65:188:0"
+          },
+          {
+            "attributes": {
+              "functionSelector": "8da5cb5b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "owner",
+              "scope": 15,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Get the address of the owner\n @return The address of the owner."
+                },
+                "id": 3,
+                "name": "StructuredDocumentation",
+                "src": "447:82:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "548:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 8,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 5,
+                        "name": "ElementaryTypeName",
+                        "src": "574:7:0"
+                      }
+                    ],
+                    "id": 6,
+                    "name": "VariableDeclaration",
+                    "src": "574:7:0"
+                  }
+                ],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "573:9:0"
+              }
+            ],
+            "id": 8,
+            "name": "FunctionDefinition",
+            "src": "534:49:0"
+          },
+          {
+            "attributes": {
+              "functionSelector": "f2fde38b",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferOwnership",
+              "scope": 15,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "text": "@notice Set the address of the new owner of the contract\n @param _newOwner The address of the new owner of the contract"
+                },
+                "id": 9,
+                "name": "StructuredDocumentation",
+                "src": "589:130:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_newOwner",
+                      "scope": 14,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 10,
+                        "name": "ElementaryTypeName",
+                        "src": "751:7:0"
+                      }
+                    ],
+                    "id": 11,
+                    "name": "VariableDeclaration",
+                    "src": "751:17:0"
+                  }
+                ],
+                "id": 12,
+                "name": "ParameterList",
+                "src": "750:19:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 13,
+                "name": "ParameterList",
+                "src": "778:0:0"
+              }
+            ],
+            "id": 14,
+            "name": "FunctionDefinition",
+            "src": "724:55:0"
+          }
+        ],
+        "id": 15,
+        "name": "ContractDefinition",
+        "src": "253:528:0"
+      }
+    ],
+    "id": 16,
+    "name": "SourceUnit",
+    "src": "40:742:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.4+commit.3f05b770.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-09T15:03:03.281Z",
+  "devdoc": {
+    "details": "See https://github.com/ethereum/EIPs/blob/master/EIPS/eip-173.md  Note: the ERC-165 identifier for this interface is 0x7f5828d0",
+    "kind": "dev",
+    "methods": {
+      "owner()": {
+        "returns": {
+          "_0": "The address of the owner."
+        }
+      },
+      "transferOwnership(address)": {
+        "params": {
+          "_newOwner": "The address of the new owner of the contract"
+        }
+      }
+    },
+    "title": "ERC-173 Contract Ownership Standard",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "owner()": {
+        "notice": "Get the address of the owner"
+      },
+      "transferOwnership(address)": {
+        "notice": "Set the address of the new owner of the contract"
+      }
+    },
+    "version": 1
+  }
+}

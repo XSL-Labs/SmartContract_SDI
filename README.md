@@ -6,13 +6,13 @@ type: "reference"
 source: "https://github.com/XSL-Labs/SmartContract_SDI/blob/Main/README.md"
 ---
 
-#  SDI Smart Contract 
+#  SDI Smart Contract
 
 DID Identifier allows you to lookup an associated DID document that contains public keys and attributes.
 
 This referenced keys can be used to authenticate you, to verify your signature, ton encrypt mesage for you.
 
-### function creatDID 
+### function creatDID
 
 @dev Creates a mini DID Document for "_identity" address with
 - authentication key,
@@ -78,7 +78,7 @@ Each identity has a single address which maintains ultimate control over it. By 
 
 ### Looking up Identity Ownership
 Ownership of identity is the controller of the DID document.
-Calling the  getDID(address _identity) public view returns(DIDDocument memory)  where DIDDocument is a structure 
+Calling the  getDID(address _identity) public view returns(DIDDocument memory)  where DIDDocument is a structure
 struct DIDDocument { bytes authenticationKey; address Controller; bytes32 Service;}
 This returns a mini DIDdcouement where the Controller Address is the current identity Owner.
 
@@ -106,7 +106,7 @@ The externally signed version has the following signature setAttributeSigned(add
 The signature should be signed off the keccak256 hash of the following tightly packed parameters:
 
 byte(0x19), byte(0), address of smart contract, nonce[currentController], _identity, "setAttribute", name, value, validity
- 
+
 ### Revoking Attributes
 These attributes are revoked using the revokeAttribute(address _identity, bytes32 name, string memory value) function and published using events.
 
@@ -130,7 +130,7 @@ Attributes are stored as DIDAttributeChanged events. A validTo of 0 indicates a 
         uint previousChange
     );
 
-Where name is a representation of string shorter than 32 bytes right-padded if need to get the 32 bytes 
+Where name is a representation of string shorter than 32 bytes right-padded if need to get the 32 bytes
 Example : Auth/Secp256k1/VeriKey/Hex —> 000000000000417574682f536563703235366b312f566572694b65792f486578
 ( means add Authentication Key with Type EcdsaSecp256k1VerificationKey2019 with hex encoded public key)
 
@@ -147,10 +147,10 @@ Each identity has its previously changed block stored in the changed mapping.
 
 
 ## Assemble a DID Document
-First you start getting the mini DID document from smart contract of an identity  using 
-getDID(address _identity) public view returns(DIDDocument memory). 
+First you start getting the mini DID document from smart contract of an identity  using
+getDID(address _identity) public view returns(DIDDocument memory).
 
-Second iterate through DIDAttributeChanged  events for services and/or  verification methods 
+Second iterate through DIDAttributeChanged  events for services and/or  verification methods
 
 Example:
 ```javascript
@@ -184,12 +184,8 @@ Example:
 }
 ```
 
-### Verifiable Credential 
+### Verifiable Credential
 
 Only admin can set a prof of a verifiable credential from Issuer ( KYC)
 Storing hash of private verifiable credential with the time of creation.
 Storing an IPFS ref of public verifiable credential associated to the identity address and time.
-
-
-
-
